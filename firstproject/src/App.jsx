@@ -9,6 +9,8 @@ import States from "./components/states/States"
 // import Counter from "./components/states/Counter"
 // import Heart from "./components/states/Heart"
 import Increment from "./components/states/Increment"
+import CbcStates from "./components/states/CbcStates"
+import Parent from "./components/props/Parent"
 
 // const App = ()=>{
 //     return <Fragment>
@@ -24,10 +26,15 @@ const App = ()=>{
             <Cbc11/>
             <Navbar/> */}
             {/* States Example */}
-            <States/>
+            {/* <States/> */}
             {/* <Counter/> */}
             {/* <Heart/> */}
-            <Increment/>
+            {/* <Increment/>
+            <CbcStates/> */}
+
+
+            
+            <Parent/>
            
             
             </>

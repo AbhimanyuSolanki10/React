@@ -14,8 +14,22 @@ const States = ()=>{
         <>
             <h1>States Example</h1>
             <h1>{state}</h1>
-            <button onClick={handleChange}>change</button>
+            <button onClick={ ()=> handleChange()}>change</button>
         </>
     )
+    // return (
+    //     <>
+    //         <h1>States Example</h1>
+    //         <h1>{state}</h1>
+    //         <button onClick={ ()=> setState("byeeeee")}>change</button>
+    //     </>
+    // )
+    // return (
+    //     <>
+    //         <h1>States Example</h1>
+    //         <h1>{state}</h1>
+    //         <button onClick={handleChange}>change</button>
+    //     </>
+    // )
 }
 export default States;
