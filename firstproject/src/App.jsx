@@ -29,8 +29,8 @@ const App = ()=>{
             {/* <States/> */}
             {/* <Counter/> */}
             {/* <Heart/> */}
-            {/* <Increment/>
-            <CbcStates/> */}
+            {/* <Increment/> */}
+            {/* <CbcStates/> */}
 
 
             

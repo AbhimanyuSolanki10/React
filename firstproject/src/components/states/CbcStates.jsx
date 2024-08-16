@@ -4,6 +4,7 @@ class CbcStates extends Component{
     constructor(){
         super();
         this.state = {count:0};
+        // console.log(this.state)
     }
     render(){
         // console.log(this)

@@ -10,9 +10,9 @@ const Parent = () => {
         <h1>Parent Comp</h1>
         <hr />
         {/* <Child propname = {dbData}/> */}
-        <Child data = {dbData}/>
+        {/* <Child data = {dbData}/> */}
     </div>
   )
 }
 
-export default Parent
+export default Parent     
