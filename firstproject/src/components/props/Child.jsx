@@ -1,5 +1,15 @@
 import React from 'react'
 
+export const Child = ({data:{dbData,person:{username,subject,designation}}}) => {
+    // console.log(username,subject,designation)
+    // console.log(dbData)
+  return (
+    <div>
+        <h1>Child Comp</h1>
+        <h2>{dbData} {username} </h2>
+    </div>
+  )
+}
 // const Child = ({data}) => {
 //     console.log(data)
 //   return (
@@ -24,5 +34,12 @@ import React from 'react'
 
 
 
+export const ChildOfChild2 =()=>{
+    return(
 
-export default Child
+        <>
+            <hr/>
+            <h1>I am Child 22</h1>
+        </>
+    )
+}
