@@ -1,3 +1,5 @@
+import React from "react";
+
 const Child2 =(props)=>{
     console.log(props)
     let {dbData , person:{username,id,designation,subject}} = props;

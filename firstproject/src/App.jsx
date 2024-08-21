@@ -11,6 +11,10 @@ import States from "./components/states/States"
 import Increment from "./components/states/Increment"
 import CbcStates from "./components/states/CbcStates"
 import Parent from "./components/props/Parent"
+import TodoWrapper from "./components/todo/TodoWrapper"
+import React from "react";
+
+import "./global.css"
 
 // const App = ()=>{
 //     return <Fragment>
@@ -34,8 +38,8 @@ const App = ()=>{
 
 
             
-            <Parent/>
-           
+            {/* <Parent/> */}
+           <TodoWrapper/>
             
             </>
         

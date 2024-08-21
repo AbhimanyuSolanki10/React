@@ -1,0 +1,36 @@
+#todoform{
+    border: 1px solid blueviolet;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50vw;
+    display: flex;
+    justify-content: center;    
+    gap: 20px;
+    box-shadow: 0 5px 5px gainsboro;
+
+}
+
+#todoform>input{
+    padding: 15px 20px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid gray;
+    
+}
+
+#todoform>button{
+    padding: 15px 20px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#todoform>button:hover{
+    background-color: rgb(61, 23, 96);
+    transition:background-color 0.2s ease;
+}
+

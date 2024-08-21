@@ -1,4 +1,6 @@
 import { Component, Fragment } from "react";
+import React from "react";
+
 
 class CbcStates extends Component{
     constructor(){
