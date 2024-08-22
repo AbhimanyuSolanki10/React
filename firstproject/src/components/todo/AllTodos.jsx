@@ -1,4 +1,5 @@
 import React from 'react'
+import style from './allTodos.module.css'
 
 const AllTodos=()=> {
     let todos = [
@@ -8,20 +9,27 @@ const AllTodos=()=> {
         {id:4,text:"Prashad"}
     ];
   return (
-    <div>
-        <h1>All Todo</h1>
-        <ul>
+    <main id={style.todoContainer}>
+        <section>
             {
                 todos.map((todo)=>{
                     console.log(todo);
                     let {id,text} = todo;
-                    return <li key={id}>{text}</li>
+                    return (
+                        <article key={id}>
+                            <span>{text}</span>
+                            <div>
+                                <button>edit</button>
+                                <button>delete</button>
+                            </div>
+                        </article>
+                        );
                 })
             }
-        </ul>
+        </section>
 
 
-    </div>
+    </main>
   )
 }
 

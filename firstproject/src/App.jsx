@@ -15,6 +15,7 @@ import TodoWrapper from "./components/todo/TodoWrapper"
 import React from "react";
 
 import "./global.css"
+import Controlled from "./components/controlled/Controlled"
 
 // const App = ()=>{
 //     return <Fragment>
@@ -39,8 +40,8 @@ const App = ()=>{
 
             
             {/* <Parent/> */}
-           <TodoWrapper/>
-            
+           {/* <TodoWrapper/> */}
+                <Controlled/>
             </>
         
 }
