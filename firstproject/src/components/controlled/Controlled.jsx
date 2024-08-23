@@ -35,6 +35,7 @@ const Controlled = () => {
             <input type="text" placeholder='password' value={password} onChange={handlePassword} />
             <hr/>
             <input type="submit" />
+            <input type="submit" />
         </form>
     </div>
   )
