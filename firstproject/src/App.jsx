@@ -10,12 +10,13 @@ import States from "./components/states/States"
 // import Heart from "./components/states/Heart"
 import Increment from "./components/states/Increment"
 import CbcStates from "./components/states/CbcStates"
-import Parent from "./components/props/Parent"
+import Parent from "./components/props/Parent"``
 import TodoWrapper from "./components/todo/TodoWrapper"
 import React from "react";
 
 import "./global.css"
 import Controlled from "./components/controlled/Controlled"
+import Controlled2 from "./components/controlled/Controlled2"
 
 // const App = ()=>{
 //     return <Fragment>
@@ -41,7 +42,8 @@ const App = ()=>{
             
             {/* <Parent/> */}
            {/* <TodoWrapper/> */}
-                <Controlled/>
+                {/* <Controlled/> */}
+                {/* <Controlled2/> */}
             </>
         
 }
