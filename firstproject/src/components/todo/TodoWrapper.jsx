@@ -7,7 +7,7 @@ function TodoWrapper() {
   let [todo,setTodo]=useState({
     id:"",
     text:"",
-    list:[]
+    list:[{id:1,text:"Hello World"}]   // Hard coded
   })
     let handleChange=()=>{
       console.log("Changed");
@@ -15,8 +15,8 @@ function TodoWrapper() {
   return (
     <div id='todoWrapper'>
         <TodoNav/>
-        <CreateTodo/>
-        <AllTodos/>
+        <CreateTodo todo={todo} handleChange={handleChange} />
+        <AllTodos list={todo.list}/>
     </div>
   )
 }

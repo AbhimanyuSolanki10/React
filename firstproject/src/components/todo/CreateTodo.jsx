@@ -1,14 +1,28 @@
 import React, { useState } from 'react'
 import style from './createtodo.module.css'
 
-const CreateTodo=()=> {
-  
+const CreateTodo=({todo,handleChange})=> {
+  // console.log(todo)
+  // console.log(handleChange)
+
+
+
+
+  // we have to put the below code into parent component which is todo wrapper
+  // let [todo,setTodo]=useState({
+  //   id:"",
+  //   text:"",
+  //   list:[]
+  // })
+  //   let handleChange=()=>{
+  //     console.log("Changed");
+  //   }
   return (
     <div>
         <h1>Create Todo</h1>
 
         <form id={style.todoform}>
-            <input type="text" value={todo.text} placeholder='Enter todo.....' onChange={handleChange} />
+            <input type="text"  placeholder='Enter todo.....' value={todo.text} onChange={handleChange} />
             <button>Add todo</button>
         </form>
     </div>
