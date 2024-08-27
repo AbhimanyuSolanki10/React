@@ -24,5 +24,16 @@
 }
 #todoContainer>section>article>div>button{
     padding: 1px 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
+
+#todoContainer>section>article>div>button:first-child:hover{
+color: green;
+}
+#todoContainer>section>article>div>button:last-child:hover{
+color: red
+;
 }
 

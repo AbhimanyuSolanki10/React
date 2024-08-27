@@ -1,5 +1,7 @@
 import React from 'react'
 import style from './allTodos.module.css'
+import { FaEdit } from "react-icons/fa";
+import { MdDelete } from "react-icons/md";
 
 const AllTodos=({list})=> {
     // console.log(e)
@@ -21,8 +23,8 @@ const AllTodos=({list})=> {
                         <article key={id}>
                             <span>{text}</span>
                             <div>
-                                <button>edit</button>
-                                <button>delete</button>
+                                <button><FaEdit /></button>
+                                <button><MdDelete /></button>
                             </div>
                         </article>
                         );
