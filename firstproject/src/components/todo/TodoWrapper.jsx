@@ -18,7 +18,7 @@ function TodoWrapper() {
 
     let handleSubmit =(e)=>{
         e.preventDefault();
-        console.log(todo); // printing state
+        // console.log(todo); // printing state
 
         //! Creating new todo object
         let newTodo = {
@@ -26,7 +26,7 @@ function TodoWrapper() {
           text:todo.text,
         };
 
-        console.log(newTodo); 
+        // console.log(newTodo); 
         let updatedTodo = [...todo.list,newTodo];
         if(newTodo.text !==""){
           setTodo({
@@ -49,7 +49,7 @@ function TodoWrapper() {
           
         <TodoNav/>
         <CreateTodo todo={todo} handleChange={handleChange} handleSubmit={handleSubmit} />
-        <AllTodos list={todo.list}/>
+        <AllTodos list={todo.list} setTodo={setTodo}/>
         
     </div>
   )
