@@ -28,6 +28,7 @@ function TodoWrapper() {
 
         // console.log(newTodo); 
         let updatedTodo = [...todo.list,newTodo];
+
         if(newTodo.text !==""){
           setTodo({
             id:"",

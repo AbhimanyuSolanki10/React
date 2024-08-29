@@ -17,6 +17,9 @@ import React from "react";
 import "./global.css"
 import Controlled from "./components/controlled/Controlled"
 import Controlled2 from "./components/controlled/Controlled2"
+import Ref from "./components/refs/Ref"
+import UncontrolledForms from "./components/uncontrolled/UncontrolledForms"
+import ThemeChange from "./components/uncontrolled/ThemeChange"
 
 // const App = ()=>{
 //     return <Fragment>
@@ -41,9 +44,17 @@ const App = ()=>{
 
             
             {/* <Parent/> */}
-           <TodoWrapper/>
+           {/* <TodoWrapper/> */}
                 {/* <Controlled/> */}
                 {/* <Controlled2/> */}
+
+
+
+
+                {/* <Ref/> */}
+                {/* <UncontrolledForms/> */}
+                <ThemeChange/>
+
             </>
         
 }

@@ -4,6 +4,9 @@ import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { toast } from "react-hot-toast";
 
+
+
+
 const AllTodos = ({ list, setTodo }) => {
   function deleteTodo(id) {
     // console.log("todo deleted", id);
