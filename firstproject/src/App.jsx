@@ -2,7 +2,7 @@
 //! html are pre define tags and XML are user Define tags
 //! App.jsx is a parent component in which we can call other components like <Cbc11/>
 //! Cbc11 is export into App.jsx and App.jsx is exported into index.js and index.js connected with index.html
-import { Fragment } from "react"
+import { Fragment, useState } from "react"
 // import Cbc11 from "./components/Cbc11"
 // import Navbar from "./components/Navbar"
 import States from "./components/states/States"
@@ -20,6 +20,7 @@ import Controlled2 from "./components/controlled/Controlled2"
 import Ref from "./components/refs/Ref"
 import UncontrolledForms from "./components/uncontrolled/UncontrolledForms"
 import ThemeChange from "./components/uncontrolled/ThemeChange"
+import CBC from "./components/lifecycle/CBC"
 
 // const App = ()=>{
 //     return <Fragment>
@@ -29,6 +30,9 @@ import ThemeChange from "./components/uncontrolled/ThemeChange"
 // }
 // Fragment or <> is used to avoid extra div which is display on inspect 
 const App = ()=>{
+
+let [toggel,setTooggle]= useState(false);
+
     return <>
             {/* <h1>I am  App component</h1>
             <h2>This is Second  XML Tag </h2>
@@ -53,8 +57,11 @@ const App = ()=>{
 
                 {/* <Ref/> */}
                 {/* <UncontrolledForms/> */}
-                <ThemeChange/>
+                {/* <ThemeChange/> */}
 
+
+                <button onClick={()=>{setTooggle(!toggel)}}>toggel</button>
+                {toggel ? <CBC/> : <h1>NO Component</h1>}
             </>
         
 }
