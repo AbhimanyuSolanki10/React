@@ -6,7 +6,7 @@ const Ref = () => {
     function change(){
         console.log(demoRef)
         // console.log(demoRef.current.textContent);
-        // demoRef.current.style.backgroundColor="red";
+        demoRef.current.style.backgroundColor="red";
     }
   return (
     <div>

@@ -21,6 +21,8 @@ import Ref from "./components/refs/Ref"
 import UncontrolledForms from "./components/uncontrolled/UncontrolledForms"
 import ThemeChange from "./components/uncontrolled/ThemeChange"
 import CBC from "./components/lifecycle/CBC"
+import FBC from "./components/lifecycle/FBC"
+import Fetch from "./components/fetch/Fetch"
 
 // const App = ()=>{
 //     return <Fragment>
@@ -60,8 +62,15 @@ let [toggel,setTooggle]= useState(false);
                 {/* <ThemeChange/> */}
 
 
-                <button onClick={()=>{setTooggle(!toggel)}}>toggel</button>
-                {toggel ? <CBC/> : <h1>NO Component</h1>}
+                {/* <button onClick={()=>{setTooggle(!toggel)}}>toggel</button>
+                {toggel ? <CBC/> : <h1>NO Component</h1>} */}
+
+                {/* <FBC/> */}
+                {/* <button onClick={()=>{setTooggle(!toggel)}}>toggel</button>
+                {toggel ? <FBC/> : <h1>NO Component</h1>} */}
+
+
+                <Fetch/>
             </>
         
 }

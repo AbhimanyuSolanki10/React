@@ -34,7 +34,7 @@ export default class extends Component {
       <h1>CBC lifecycle</h1>
       <h1>{this.state.count}</h1>
       <button onClick={()=>{
-        this.setState({count:this.state.count+1})
+        this.setState({count:this.state.count + 10})
       }}>increment</button>
       </div>
     )
