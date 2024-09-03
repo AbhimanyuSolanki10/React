@@ -10,7 +10,9 @@ import States from "./components/states/States"
 // import Heart from "./components/states/Heart"
 import Increment from "./components/states/Increment"
 import CbcStates from "./components/states/CbcStates"
-import Parent from "./components/props/Parent"
+// import Parent from "./components/props/Parent"
+import Parent from "./components/propsDrilling/Parent"
+// import Parent from "./components/context/Parent"
 import TodoWrapper from "./components/todo/TodoWrapper"
 import React from "react";
 
@@ -23,6 +25,9 @@ import ThemeChange from "./components/uncontrolled/ThemeChange"
 import CBC from "./components/lifecycle/CBC"
 import FBC from "./components/lifecycle/FBC"
 import Fetch from "./components/fetch/Fetch"
+import Context1 from "./components/context/Context1"
+import Context2 from "./components/context/Context2"
+
 
 // const App = ()=>{
 //     return <Fragment>
@@ -66,11 +71,20 @@ let [toggel,setTooggle]= useState(false);
                 {toggel ? <CBC/> : <h1>NO Component</h1>} */}
 
                 {/* <FBC/> */}
-                <button onClick={()=>{setTooggle(!toggel)}}>toggel</button>
-                {toggel ? <FBC/> : <h1>NO Component</h1>}
-
+                {/* <button onClick={()=>{setTooggle(!toggel)}}>toggel</button>
+                {toggel ? <FBC/> : <h1>NO Component</h1>} */}
 
                 {/* <Fetch/> */}
+                <Parent/>
+                {/* <Context1/> */}
+
+
+               {/* <Context2>
+                <Parent/>
+               </Context2> */}
+               
+
+
             </>
         
 }
