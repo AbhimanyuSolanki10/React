@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { CgLayoutGrid } from 'react-icons/cg';
 
 const Fetch = () => {
     let[users,setUsers]=useState(null);

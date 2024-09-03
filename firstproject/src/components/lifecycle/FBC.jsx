@@ -5,23 +5,23 @@ const FBC = () => {
 
   //todo ------> useEffect(()=>{},dependncyArray)
 
-  //! RENDER
+  //! 1:-RENDER
   useEffect(() => {
     console.log("I am working like render() ");
   });
 
-  //! COMPONENTDIDMOUNT
+  //! 2:-COMPONENTDIDMOUNT
   useEffect(()=>{
     console.log("component mounted")
 
-    //! COMPONENT WILL UNMOUNT
+    //!4:- COMPONENT WILL UNMOUNT
     return function(){
         //clean-up function
-        console.log("component unmount");
+        console.log("component UNMOUNT");
     };
   },[])
 
-  //! COMPONENTDIDUPDATE
+  //! 3:-COMPONENTDIDUPDATE
   useEffect(()=>{
     console.log("component updated")
 
@@ -34,13 +34,7 @@ const FBC = () => {
   return (
     <div>
       <h1>Life Cycle in FBC {count}</h1>
-      <button
-        onClick={() => {
-          setCount(count + 1);
-        }}
-      >
-        increment
-      </button>
+      <button onClick={() => {setCount(count + 1)}}>increment</button>
     </div>
   );
 };

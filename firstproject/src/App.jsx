@@ -66,11 +66,11 @@ let [toggel,setTooggle]= useState(false);
                 {toggel ? <CBC/> : <h1>NO Component</h1>} */}
 
                 {/* <FBC/> */}
-                {/* <button onClick={()=>{setTooggle(!toggel)}}>toggel</button>
-                {toggel ? <FBC/> : <h1>NO Component</h1>} */}
+                <button onClick={()=>{setTooggle(!toggel)}}>toggel</button>
+                {toggel ? <FBC/> : <h1>NO Component</h1>}
 
 
-                <Fetch/>
+                {/* <Fetch/> */}
             </>
         
 }
