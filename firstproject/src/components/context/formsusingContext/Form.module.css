@@ -1,0 +1,38 @@
+#formwrapper > header{
+    align-items:center ;
+    padding: 20px;
+}
+form{
+    border: 1px solid black;
+    width: 50vw;
+    margin: 100px auto;
+
+}
+
+form > .formGroup{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+form > .formGroup > input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid gainsboro;
+    outline: none;
+}
+
+form > .formGroup:last-child>input{
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+form> formGroup >label{
+    text-transform: capitalize;
+    font-weight: 50%;
+    font-family: sans-serif;
+}

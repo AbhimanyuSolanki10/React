@@ -27,6 +27,8 @@ import FBC from "./components/lifecycle/FBC"
 import Fetch from "./components/fetch/Fetch"
 import Context1 from "./components/context/Context1"
 import Context2 from "./components/context/Context2"
+import Form from "./components/context/formsusingContext/Form"
+import FormContext from "./components/context/formsusingContext/FormContext"
 
 
 // const App = ()=>{
@@ -75,13 +77,19 @@ let [toggel,setTooggle]= useState(false);
                 {toggel ? <FBC/> : <h1>NO Component</h1>} */}
 
                 {/* <Fetch/> */}
-                <Parent/>
+                {/* <Parent/> */}
                 {/* <Context1/> */}
 
 
                {/* <Context2>
                 <Parent/>
                </Context2> */}
+
+               {/* <Form/> */}
+
+               <FormContext>
+                <Form data={132}/>
+               </FormContext>
                
 
 
