@@ -1,0 +1,159 @@
+//! What is React ?
+//? React is javascript library. 
+//! What is library?
+//? library is a collection of pre defined code and this is light weighted as compare to framework
+//! What is Framework
+//? Framework is a collection of library 
+//! Library Disadvantage 
+//?  we can only create single page Application we don't go from one page to another 
+//! Framework disadvantage
+//?  It comes with unnacessary library which make our application slower .
+//! Single page appplication
+//? Only one html page is there and they are more faster than multipage application, It will send current request and it will not start from 0 to  currrent request (inspect -- network -- below request)
+//! Multi page appplication
+//? More  than one html pages  (example amzone) difference is performance when we request then it will start form 0 to 100 or whatever the current request is called  each and everytime this start form 0 and  make the application slow.
+
+                    //!                 CLI (COMMAND LINE INTERFACE)
+                    //!                  |
+                    //!  ----------------|------------------------------------------------
+                    //!  |                                                                |
+                    //!  CREAT REACT APP                                                 VITE(FASTER)
+                    //!  npx create-react-app  projectName(always in lower case)
+
+    //! Features of React 
+    //? 1:- Single page application
+    //? 2:- Declarative (What to do ) javascript is Imperitive(How to do)
+    //? 3:- Component Based Architechture
+
+    //! What is Component?
+    //* components are the building block of web page and App.jsx is a component and (App.js-->always first letter is Capital which is Mandatory) if we create in lower case then it will not work even after rename so  we have to change the name of the file like App1.jsx 
+    //! Why capital letter is mandatory ?
+    //* It is  for react understanding we give first letter capital so it will diffentiate html tags and XML tags.
+
+    //todo difference between XTML and XML
+    //? XML is user define and HTML is predefined.
+    //? HTML is  case insensitve and XML is  case sensitive
+    //? In Html we have class attribute  XML is class name attribute
+    //? html is use in small letter and when we use any component use Capital letter
+
+
+    //todo     Its not mandatory to give file and function name same but not a good practice to give different names it is just  for not creating confusion
+    //todo     Index.js is the entry point for React
+
+    //! component is of two type :-
+    //! 1:- function based component 2:- class based component
+    
+    // ?      FBC                                         CBC
+    // -----------------------------------------------------------------------------------------------------------
+    //1    JS FUNC use                                JS CLASSES use    
+    //2   SATELESS                                   SATEFULL     
+    //3    HOOKS (to make FBC  as statefull )          NO HOOKS  
+    //    (WE CAN ACHIEVE LIFE CYCLE METHOD)                   
+    //4    NO LIFE MEHTODS                           LIFE CYCLE METHOD     
+    //5    NO RENDER                                  RENDER    
+
+    //! we can use multiple deafult import statements for multiple components not function
+
+    //! Hooks :-
+    //  Hooks are pre define methods which is present in react library 
+
+    //! How to use hooks ?
+    // we can use hooks by using  import from react
+
+    // Any method start with use  keyword then this is hook and use is always start with small letter and second letter is capital
+    // import {useState} from "react"
+    // and we have to always named import useState
+    // useState is a Hook
+
+    // states is a container.
+    // state are use to perfom dynamic changes and store a data on UI .
+    // when we use useState without import we get useState is not define error.
+    // useState is a mehtod it will return an array[undefine , function ] and that function is called Setter function and it is use to update the data of state vlaue
+    // before return statement we use js and after we use XML
+    // if we want to diplay that value on UI we  use  XML
+    // If we  have to use js code in XML then we use Expression {}  like <h1>{state}</h1> 
+
+
+    //! <button onClick={handleChange()}>change</button>
+    // this will give Infinite loop error beacuse when we call this function it will re-render the component
+    // and if we want to use () so we have to use the call back function like 
+    // <button onClick={ () =>{handleChange()}}>  change  </button>
+    // <button onClick={ () =>{setState("Byeeeeeee")}}>  change  </button>
+
+    // constructor is use to initialize the states
+    // this keyword is pointing to current object which is class
+    // state is null by default 
+    // when we use constructor its mandatory to use super() 
+    // this.state through this we can set the value inside the state object if we set value as an object or array so we have to access these value as object or array 
+
+
+    //!--------------------------------Props----------------------------------------------------------------------------------------------------------------------------
+    //? Props means property through props we can send data from parent to child we cannot send data from child to parent using props are unidirectional
+    // props are inbuilt object which will send our data in the form of object and //!prop name is key and value is vlaue
+    //? Syntax of Prop => <child props = {dbData} />
+    //                        |             |
+    //*                  prop name       prop value
+    //! prop name can we taken anything  
+
+    // difference between <fragment></fragment> and <><></>
+    // in empty fragment (<></>)we cannot use key if we want to use key inside fragment we can use it as <fragement key={id}></fragement>
+    //  Warning: Each child in a list should have a unique "key" prop.
+
+    // -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+    //! In React we have three type of CSS 
+    // 1:- Inline CSS   {expression-->{object-->key:value pair}}
+    // 2:- Global CSS :- a single css file which is applicable for all componment which is created inside src-->global.css and import it in  app.jsx either index.js
+    // 3:- Module CSS :- file is created using name.module.css ,It is mostly used , in this we have to store the refference of that css file and use like--> id={style.idname}  insted of "" we have to use {}
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------
+//!    In React two types of form 
+//     controlled :- Using useStated if we create any form then this is called controlled form and this use virtual dom
+//     Uncontrolled :- Using useRef if we create any form then this is called Uncontrolled form and this not recommended to use
+//todo     The comparison of Real dom and virtual dom is called Diffing algorithm and changes called Patching and the whole process is called Reconciliation
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------
+// a form which is controlled by virtual dom is called controlled form
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------
+//! useRef
+// It is also present in react library and it will return an object with only one key name as <current:undefined></current:undefined>
+// It is used to target an element by ref={} .
+// but we should avoid using useRef because it will change to real dom 
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------
+// rcc is used  CLASS BASED AND rafce is used for  FUNCTION BASED 
+//! LIFE CYCLE :-
+//? 1:-  If any component display on UI it means birth and for that we have one method which ComponentDidMount()
+//? 2:-  If any component gets updated for that we have one method called ComponentDidUpdate() 
+//? 3:-  Just before component gets deleted we use ComponentWillUnmount() ;(component ke hatne se pehle ) it is use for any aschnronous behaviour . 
+//? 4:-  Constructor is best place to initialize the state in Class based Component and  it is simliar to ComponentDidMount() and it will execute only one time and it will executed before ComponentDidMount() 
+//? 5:-  We have to use super() call when we use constructor call;
+//? 6:-  We can use console.log() Inside render() and the call Priorty is constructor ---> render ----> compnent mounted .
+//? 7:-  getSnapshotBeforeUpdate(nextProp,prevState) and return should be compulsory.
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------
+//! useEffect:-
+// using useEffect hook we can achive lifecycle methods
+//? syntax:- useEffect(callback function ,dependency array) or useEffect(()=>{callback function},[dependency]);
+// 1:-When us use UseEffect without any dependency or any array ------->//todo  useEffect(()=>{}) then it will work like render
+// 2:-when we give empty array then useEffect work as componentdidimount------->//todo  useEffect(()=>{},[])
+// 3:-When we give any varible in dependency then it work like componentdidupdate ------->//todo  useEffect(()=>{},[count]) and initially it will execute only once even we didnot make any update like click on button.
+//!4:-Clean-up function is a function which is written inside( when our useEffect work like componentdidmount)useEffect(()=>{ return {clean-up function} }, []) which will execute same as componentWillUnmount.
+//!5:-GETSNAPSHOTBEFOREUPDATE function is a function which is written inside( when our useEffect work like componentDidUpdate)useEffect(()=>{ return function(){console.log("Prev states was " ,count)} }, [count]) which will execute same as GETSNAPSHOTBEFOREUPDATE.
+// todo  ?is optional chaining means left side jab tak null ya falssy hai jab tak right wali value to execute mat karo.
+
+// data present in parent and send to neseted child so we use Pros drilling
+//! useContext:- 
+// context means its a container in which we can store data globally but it has some condition
+// we have three steps to create context
+// 1: Create a Context  we have method called createContext and we have to call it before parent component and it will return contextobject which is object 
+// 2:-Provide a Context  we have to call provider component which is pair tag and inside provider it has inbuilt prop name as value={}
+// 3:- Consume a Context --- useContext will accept the contextobject value-----> let val=useContext(GLOBAL)
+
+// when we see $$ its means component
+
+
+
+
+
+
+
+
+
+        
