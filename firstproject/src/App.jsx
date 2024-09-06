@@ -30,6 +30,8 @@ import Context2 from "./components/context/Context2"
 import Form from "./components/context/formsusingContext/Form"
 import FormContext from "./components/context/formsusingContext/FormContext"
 import Products from "./components/customHooks/Products"
+import Reducer from "./components/reducer/Reducer"
+import MemoExample from "./components/memo/MemoExample"
 
 
 // const App = ()=>{
@@ -92,8 +94,11 @@ let [toggel,setTooggle]= useState(false);
                 <Form data={132}/>
                </FormContext> */}
 
-               <Products/>
+               {/* <Products/> */}
+
+               {/* <Reducer/> */}
                
+               <MemoExample/>
 
 
             </>
