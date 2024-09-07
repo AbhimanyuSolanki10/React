@@ -148,6 +148,24 @@
 
 // when we see $$ its means component
 
+//! UseMemo():-
+//1:- useMemo is used for code optimization....it returns an memoized value.....it accepts callback function and dependecy array
+// example :- let multiply = useMemo(()=>{
+    //        console.log("*****************************")
+    //           return add*5; 
+    //          },[add]);
+
+//2:- useEffect() returns only the clean up function but useMemo returns the memoized value...
+//    useMemo() will execute only when there is change in dependency array otherwise memoized value will render and function will not ececute 
+
+
+//! UseReducer() !
+//1: useReducer hook present in react library... similar to useState()
+//2: it returns an array..[state, dispatch()]
+//3: dispatch function will accepts two arguments 1:- Reducer function  2:- Initial state
+//4: Initialstate will be stored in state.
+
+//todo useReducer() accepts two arguments ...1: state and action
 
 
 
