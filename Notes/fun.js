@@ -13,6 +13,8 @@
 //! Multi page appplication
 //? More  than one html pages  (example amzone) difference is performance when we request then it will start form 0 to 100 or whatever the current request is called  each and everytime this start form 0 and  make the application slow.
 
+import { useCallback } from "react";
+
                     //!                 CLI (COMMAND LINE INTERFACE)
                     //!                  |
                     //!  ----------------|------------------------------------------------
@@ -167,6 +169,12 @@
 
 //todo useReducer() accepts two arguments ...1: state and action
 
+
+//todo  useCallback rerurn is a memoized function and useMemo return a memoized vlaue 
+//! React.memo is a function in react through which we can pass a component like React.memo(ChildA) now our component will be memoized 
+
+// Higher order component is also use  to avoid propDrilling but we not use this much
+// higher order component is same as hof and it accept one component as argument and return with some extra features
 
 
 

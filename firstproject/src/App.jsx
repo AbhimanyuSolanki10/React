@@ -32,6 +32,9 @@ import FormContext from "./components/context/formsusingContext/FormContext"
 import Products from "./components/customHooks/Products"
 import Reducer from "./components/reducer/Reducer"
 import MemoExample from "./components/memo/MemoExample"
+import Callback from "./components/callback/Callback"
+import Data from "./components/hoc/Data"
+import User from "./components/hoc/User"
 
 
 // const App = ()=>{
@@ -98,7 +101,12 @@ let [toggel,setTooggle]= useState(false);
 
                {/* <Reducer/> */}
                
-               <MemoExample/>
+               {/* <MemoExample/> */}
+
+               <Callback/>
+
+               {/* <Data/> */}
+               {/* <User/> */}
 
 
             </>
