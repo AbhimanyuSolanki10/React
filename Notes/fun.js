@@ -13,6 +13,7 @@
 //! Multi page appplication
 //? More  than one html pages  (example amzone) difference is performance when we request then it will start form 0 to 100 or whatever the current request is called  each and everytime this start form 0 and  make the application slow.
 
+import { element } from "prop-types";
 import { useCallback } from "react";
 
                     //!                 CLI (COMMAND LINE INTERFACE)
@@ -175,6 +176,24 @@ import { useCallback } from "react";
 
 // Higher order component is also use  to avoid propDrilling but we not use this much
 // higher order component is same as hof and it accept one component as argument and return with some extra features
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+//! Routing  
+//? 1:- borwser-router  (older version)
+// npm i react-router-dom for 
+//? 2:- createBroweser-Router
+
+// todo  We use Routes when there are multiple Route and it is basically use to wrap-up the multiple Route
+// example :- <Routes>
+// <Route path="/" element={<Home/>}/>
+// <Route path="/about" element={<About/>}/>
+// <Route path="/contact" element={<Contact/>}/>
+// <Route path="/signup" element={<Signup/>}/>
+// </Routes>
+//todo   When we have single Route then no need to use Routes 
+//todo  Route will accept two inbuilt prop path and element where path will be given by using forward slash(/) and in element we have to pass the component that we have to render 
+//! example           <Route path="/" element={<Home/>}/>
 
 
 
