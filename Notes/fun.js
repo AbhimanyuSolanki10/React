@@ -195,6 +195,9 @@ import { useCallback } from "react";
 //todo  Route will accept two inbuilt prop path and element where path will be given by using forward slash(/) and in element we have to pass the component that we have to render 
 //! example           <Route path="/" element={<Home/>}/>
 
+// Link is a component and we use inplace of anchor tag and to is a prop and we have to import it from borser router 
+// borwser router supermost parent so we have to call navbar inside browser router because we use Link which is component of React 
+
 
 
 

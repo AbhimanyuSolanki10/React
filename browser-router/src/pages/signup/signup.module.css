@@ -1,0 +1,43 @@
+#signupConstianer {
+    border: 1px solid black;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#signupConstianer>form{
+    border: 1px solid green;
+    height: 90%;
+    padding: 20px;;
+}
+
+#signupConstianer>form>.formGroup{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#signupConstianer>form>.formGroup>label{
+    font-size: 12px;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+}
+#signupConstianer>form>.formGroup>input{
+    padding: 2px 5px;
+    border: 1px solid gainsboro;
+    background-color: #17171f;
+    color: gainsboro;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+#signupConstianer>form>.formGroup>input::placeholder{
+    font-size: 10px;
+}
+
+#signupConstianer>form>.formGroup>:last-child>input{
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    padding: 4px;
+}

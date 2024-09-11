@@ -1,5 +1,4 @@
 import React from 'react'
-import HOC from './Hoc'
 import Hoc from './Hoc'
 
 const User = (props) => {
