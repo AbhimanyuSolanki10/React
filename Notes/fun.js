@@ -198,7 +198,18 @@ import { useCallback } from "react";
 // Link is a component and we use inplace of anchor tag and to is a prop and we have to import it from borser router 
 // borwser router supermost parent so we have to call navbar inside browser router because we use Link which is component of React 
 
+// end point is the url of api 
+// npx json-server backend/db.json by using this creat api and we have to give port number ---port  5000
+// npx json-server backend/db.json --watch --port 5000
+// dummy server per id dena compulsory jai 
+http://localhost:5000/users ------>this is the end point
+// axios provide four method  axios use to communicate with api
+// get 
+// post -- it accept end point (url)
+// put 
+// delete
 
+// jo data send karna hai usko payload kehte hai
 
 
 

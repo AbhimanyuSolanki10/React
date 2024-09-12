@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "example"
+    },
+    {
+      "id": "cb1a",
+      "username": "asdfg",
+      "email": "sdf@gmail.com",
+      "password": "7852"
+    },
+    {
+      "id": "4913",
+      "username": "prasad",
+      "email": "prasad@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "a021",
+      "username": "prashad ",
+      "email": "prashad@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "dee8",
+      "username": "abhi",
+      "email": "abhimanyusolanki10@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "836d",
+      "username": "abhimanyusolanki10@gmail.com",
+      "email": "sdf@gmail.com",
+      "password": "545"
+    },
+    {
+      "id": "6eb6",
+      "username": "sarvesh",
+      "email": "sarvesh@gmail.com",
+      "password": "1234567879"
+    },
+    {
+      "id": "0687",
+      "username": "abhimanyu",
+      "email": "abc@gmil.com",
+      "password": "qwerty"
+    },
+    {
+      "id": "8634",
+      "username": "abhiman",
+      "email": "abhimanyusolanki10@gmail.com",
+      "password": "7896455"
+    },
+    {
+      "id": "1e9b",
+      "username": "asdf",
+      "email": "prasasd@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "e0e0",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "a539",
+      "username": "",
+      "email": "",
+      "password": ""
+    }
+  ]
+}

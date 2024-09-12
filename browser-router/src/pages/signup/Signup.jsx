@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import style from "./signup.module.css";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 const Signup = () => {
   const [signupUser,setSignupUser] =useState({
@@ -15,11 +17,23 @@ const Signup = () => {
   }
   let handleSubmit = (e)=>{
     e.preventDefault()
-    console.log(signupUser)
+    console.log(signupUser) // playload
+
+    axios.post("http://localhost:5000/users",signupUser).then(()=>{
+              console.log("data sent successfully")
+              //clearing input fields
+              setSignupUser({username:"",email:"",password:""})
+
+            toast.success("signup successfully")
+    }).catch((err)=>{
+        console.log(err,"something went wrong")
+    })
+
+
   }
 
   return (
-    <section id={style.signupConstianer}>
+    <section id={style.signupContainer}>
       <form onSubmit={handleSubmit}>
         <div className={style.formGroup}>
           <label htmlFor="username">usename</label>
@@ -50,11 +64,11 @@ const Signup = () => {
         <div className={style.formGroup}>
           <label htmlFor="password">password</label>
           <input
-            type="text"
+            type="password"
             name="password"
             id="password"
             placeholder="Enter password"
-            value={signupUser.id}
+            value={signupUser.password}
             onChange={handleChange}
 
 
@@ -62,7 +76,7 @@ const Signup = () => {
         </div>
         
           <div className={style.formGroup}>
-            <input type="submit" />
+            <input type="submit" value="Signup"/>
         </div>
       </form>
     </section>

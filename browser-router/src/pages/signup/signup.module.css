@@ -1,28 +1,28 @@
-#signupConstianer {
+#signupContainer {
     border: 1px solid black;
     height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#signupConstianer>form{
+#signupContainer>form{
     border: 1px solid green;
     height: 90%;
     padding: 20px;;
 }
 
-#signupConstianer>form>.formGroup{
+#signupContainer>form>.formGroup{
     padding: 10px 0;
     display: flex;
     flex-direction: column;
 }
 
-#signupConstianer>form>.formGroup>label{
+#signupContainer>form>.formGroup>label{
     font-size: 12px;
     text-transform: capitalize;
     padding-bottom: 5px;
 }
-#signupConstianer>form>.formGroup>input{
+#signupContainer>form>.formGroup>input{
     padding: 2px 5px;
     border: 1px solid gainsboro;
     background-color: #17171f;
@@ -31,11 +31,11 @@
     font-size: 13px;
 }
 
-#signupConstianer>form>.formGroup>input::placeholder{
+#signupContainer>form>.formGroup>input::placeholder{
     font-size: 10px;
 }
 
-#signupConstianer>form>.formGroup>:last-child>input{
+#signupContainer>form>.formGroup>:last-child>input{
     background-color: white;
     color: black;
     font-weight: 700;
