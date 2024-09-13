@@ -203,13 +203,15 @@ import { useCallback } from "react";
 // npx json-server backend/db.json --watch --port 5000
 // dummy server per id dena compulsory jai 
 http://localhost:5000/users ------>this is the end point
-// axios provide four method  axios use to communicate with api
+// axios provide four method  axios use to communicate with api or use to send the data 
 // get 
 // post -- it accept end point (url)
 // put 
 // delete
 
 // jo data send karna hai usko payload kehte hai
+
+// useNavigate is a hook which return a funciton  it is a part of react router dom and this function is called navigate function 
 
 
 

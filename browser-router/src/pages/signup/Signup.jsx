@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { Component, useState } from "react";
 import style from "./signup.module.css";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
+
 
 const Signup = () => {
+  let navigate = useNavigate();
   const [signupUser,setSignupUser] =useState({
     username:"",
     email:"",
@@ -25,6 +28,15 @@ const Signup = () => {
               setSignupUser({username:"",email:"",password:""})
 
             toast.success("signup successfully")
+
+            //! this will reload the page
+            // window.location.assign("/login")
+
+            //! navigating to login Component
+            navigate("/login")
+
+
+
     }).catch((err)=>{
         console.log(err,"something went wrong")
     })
