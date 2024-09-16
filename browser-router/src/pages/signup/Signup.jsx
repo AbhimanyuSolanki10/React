@@ -12,7 +12,7 @@ const Signup = () => {
     email:"",
     password:"",
   })
-
+//e is syntheticBased Event
   let handleChange = (e)=>{
     // console.log(e.target.value)
     let {name,value} = e.target

@@ -1,38 +1,10 @@
 {
   "users": [
     {
-      "id": "1",
-      "username": "example"
-    },
-    {
-      "id": "cb1a",
-      "username": "asdfg",
-      "email": "sdf@gmail.com",
-      "password": "7852"
-    },
-    {
-      "id": "4913",
-      "username": "prasad",
-      "email": "prasad@gmail.com",
-      "password": "1234"
-    },
-    {
       "id": "a021",
       "username": "prashad ",
       "email": "prashad@gmail.com",
       "password": "1234"
-    },
-    {
-      "id": "dee8",
-      "username": "abhi",
-      "email": "abhimanyusolanki10@gmail.com",
-      "password": "123"
-    },
-    {
-      "id": "836d",
-      "username": "abhimanyusolanki10@gmail.com",
-      "email": "sdf@gmail.com",
-      "password": "545"
     },
     {
       "id": "6eb6",
@@ -45,60 +17,6 @@
       "username": "abhimanyu",
       "email": "abc@gmil.com",
       "password": "qwerty"
-    },
-    {
-      "id": "8634",
-      "username": "abhiman",
-      "email": "abhimanyusolanki10@gmail.com",
-      "password": "7896455"
-    },
-    {
-      "id": "1e9b",
-      "username": "asdf",
-      "email": "prasasd@gmail.com",
-      "password": "12345"
-    },
-    {
-      "id": "e0e0",
-      "username": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "a539",
-      "username": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "251a",
-      "username": "sdf",
-      "email": "abhimanyusolanki10@gmail.com",
-      "password": "123"
-    },
-    {
-      "id": "83cf",
-      "username": "123",
-      "email": "123@gmail.com",
-      "password": "123"
-    },
-    {
-      "id": "6c29",
-      "username": "asdfvg",
-      "email": "as@gmail.com",
-      "password": "wsdfg"
-    },
-    {
-      "id": "19e7",
-      "username": "abhim",
-      "email": "abhimanyusolanki10@gmail.com",
-      "password": "abhim"
-    },
-    {
-      "id": "2dec",
-      "username": "Abhimanyu Solanki",
-      "email": "abhimanyusolanki10@gmail.com",
-      "password": "Abhimanyu"
     }
   ]
 }
