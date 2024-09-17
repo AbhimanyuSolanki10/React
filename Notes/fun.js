@@ -212,7 +212,8 @@ http://localhost:5000/users ------>this is the end point
 // jo data send karna hai usko payload kehte hai
 
 // useNavigate is a hook which return a funciton  it is a part of react router dom and this function is called navigate function 
-
+// Navigate is component 
+// useNavigate is a hook
 
 
 

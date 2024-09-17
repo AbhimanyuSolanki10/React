@@ -2,10 +2,12 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import style from "./profile.module.css";
 import toast from "react-hot-toast";
+import { Link } from "react-router-dom";
 
 const Profile = () => {
   let [authUser, setAuthUser] = useState(null);
   let [allUsers, setAllUsers] = useState(null);
+  let [toggle,setToggle]=useState(false);
   let id = sessionStorage.getItem("id");
   // fetch authenticated user
   useEffect(() => {
@@ -25,13 +27,15 @@ const Profile = () => {
       setAllUsers(data);
     }
     getAllUsers();
-  }, []);
+  }, [toggle]);
 
  function handleDelete(id){
       console.log(id)
       axios.delete(`http://localhost:5000/users/${id}`).then(()=>{
         toast.success("User Deleted")
-        window.location.reload(); //force refresh
+        setToggle(!toggle);
+
+        // window.location.reload(); //force refresh
       }).catch((err)=>{
         console.log(err)
         toast.error("Unable to delete")
@@ -53,7 +57,7 @@ const Profile = () => {
               <tr key={user.id}>
                 <td>{user.username}</td>
                 <td>{user.email}</td>
-                <td><button>Edit</button></td>
+                <td><button><Link to={`/edit/${user.id}`}>Edit</Link></button></td>
                 <td><button onClick={()=>handleDelete(user.id)}>Delete</button></td>
               </tr>
             );
