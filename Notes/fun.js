@@ -14,7 +14,7 @@
 //? More  than one html pages  (example amzone) difference is performance when we request then it will start form 0 to 100 or whatever the current request is called  each and everytime this start form 0 and  make the application slow.
 
 import { element } from "prop-types";
-import { useCallback } from "react";
+import { Suspense, useCallback } from "react";
 
                     //!                 CLI (COMMAND LINE INTERFACE)
                     //!                  |
@@ -195,14 +195,14 @@ import { useCallback } from "react";
 //todo  Route will accept two inbuilt prop path and element where path will be given by using forward slash(/) and in element we have to pass the component that we have to render 
 //! example           <Route path="/" element={<Home/>}/>
 
-// Link is a component and we use inplace of anchor tag and to is a prop and we have to import it from borser router 
+//? Link is a component and we use in place of anchor tag and to is a prop and we have to import it from borser router 
 // borwser router supermost parent so we have to call navbar inside browser router because we use Link which is component of React 
 
 // end point is the url of api 
 // npx json-server backend/db.json by using this creat api and we have to give port number ---port  5000
 // npx json-server backend/db.json --watch --port 5000
 // dummy server per id dena compulsory jai 
-http://localhost:5000/users ------>this is the end point
+// http://localhost:5000/users ------>this is the end point
 // axios provide four method  axios use to communicate with api or use to send the data 
 // get 
 // post -- it accept end point (url)
@@ -214,6 +214,20 @@ http://localhost:5000/users ------>this is the end point
 // useNavigate is a hook which return a funciton  it is a part of react router dom and this function is called navigate function 
 // Navigate is component 
 // useNavigate is a hook
+
+// lazy loading or code spliting
+// lazy is a hof function which accept one callback function
+// lazy will accept one callback function in which we have to return the import function
+// in react we have one method called lazy  the way we are importing component just we have to change the import way 
+// Suspense is a component so that our page will load lazyly so it will so something else
+// Suspense have one inbuilt prop called fallback={<h1>Loading</h1>}
+// Suspense will work when component load first time only
+// Suspense is not a good practice to use in every Route insted we can use in Routes 
+
+// create browser router is funtion it will aceept an array in which objects are there 
+// it is very helpful when we use nested routes
+Outlet is component is use to display children route 
+
 
 
 

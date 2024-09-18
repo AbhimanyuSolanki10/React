@@ -87,7 +87,7 @@ const Signup = () => {
           />
         </div>
         
-          <div className={style.formGroup}>
+        <div className={style.formGroup}>
             <input type="submit" value="Signup"/>
         </div>
       </form>
