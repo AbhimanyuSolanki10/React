@@ -226,7 +226,11 @@ import { Suspense, useCallback } from "react";
 
 // create browser router is funtion it will aceept an array in which objects are there 
 // it is very helpful when we use nested routes
-Outlet is component is use to display children route 
+// Outlet is component is use to display children route 
+// Redux:
+// Before redux we have Mobx ,flux then Redux --> Redux-tool kit and Redux tool kit internally use REdux
+// why we need : 
+
 
 
 
