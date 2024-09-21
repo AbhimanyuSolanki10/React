@@ -13,8 +13,8 @@
 //! Multi page appplication
 //? More  than one html pages  (example amzone) difference is performance when we request then it will start form 0 to 100 or whatever the current request is called  each and everytime this start form 0 and  make the application slow.
 
-import { element } from "prop-types";
-import { Suspense, useCallback } from "react";
+// import { element } from "prop-types";
+// import { Suspense, useCallback } from "react";
 
                     //!                 CLI (COMMAND LINE INTERFACE)
                     //!                  |
@@ -224,12 +224,12 @@ import { Suspense, useCallback } from "react";
 // Suspense will work when component load first time only
 // Suspense is not a good practice to use in every Route insted we can use in Routes 
 
-// create browser router is funtion it will aceept an array in which objects are there 
-// it is very helpful when we use nested routes
+// create browser router is funtion it will accept an array in which objects are there 
+// it is very helpful when we use nested Routes.
 // Outlet is component is use to display children route 
 // Redux:
-// Before redux we have Mobx ,flux then Redux --> Redux-tool kit and Redux tool kit internally use REdux
-// why we need : 
+// Before redux we have Mobx ,flux then Redux --> Redux-toolkit and Redux tool kit internally use Redux
+
 
 
 
