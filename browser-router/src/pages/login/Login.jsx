@@ -5,6 +5,7 @@ import toast from 'react-hot-toast'
 import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
+    // state of login user
     const [loginUser,setLoginUser]=useState({
         email:"",
         password:"",
@@ -33,7 +34,7 @@ const Login = () => {
         e.preventDefault();
         console.log(loginUser);
 
-        //finding authenticated use
+        //finding authenticated user
        let authUser= allUsers?.find((user)=>{
           console.log(user)
           return user.email === loginUser.email && user.password===loginUser.password;

@@ -1,0 +1,39 @@
+#todoContainer{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#todoContainer>section{
+    box-sizing: border-box;
+    width: 50vw;
+    padding: 10px 70px;
+
+}
+
+#todoContainer>section>article{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+#todoContainer>section>article>div{
+    display: flex;   
+    gap: 10px;
+}
+#todoContainer>section>article>div>button{
+    padding: 1px 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
+
+#todoContainer>section>article>div>button:first-child:hover{
+color: green;
+}
+#todoContainer>section>article>div>button:last-child:hover{
+color: red
+;
+}
+

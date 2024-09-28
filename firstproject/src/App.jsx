@@ -63,7 +63,7 @@ let [toggel,setTooggle]= useState(false);
 
             
             {/* <Parent/> */}
-           {/* <TodoWrapper/> */}
+           <TodoWrapper/>
                 {/* <Controlled/> */}
                 {/* <Controlled2/> */}
 
@@ -103,7 +103,7 @@ let [toggel,setTooggle]= useState(false);
                
                {/* <MemoExample/> */}
 
-               <Callback/>
+               {/* <Callback/> */}
 
                {/* <Data/> */}
                {/* <User/> */}
