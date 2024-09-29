@@ -10,7 +10,7 @@ const Login = () => {
         email:"",
         password:"",
     })
-    
+    //state of all users
     const [allUsers,setAllUsers] =useState(null);
 
     let navigate = useNavigate();

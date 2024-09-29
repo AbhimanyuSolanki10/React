@@ -1,0 +1,29 @@
+#navContainer{
+    height: 50px;
+    width: 80vw;
+    border: 1 px solid rgb(235, 83, 83);
+    margin: 30px 100px;
+    background-color: #a9d49d;
+}
+
+#navContainer>ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#navContainer>ul>li{
+    padding: 2px 8px;
+    border-radius: 20px;
+    text-transform: capitalize;
+    color: #e6e9e6;
+    font-weight: 700;
+}
+
+#navContainer>ul>li:hover{
+    background-color: #080b07;
+    transition: 0.3s;
+}
+

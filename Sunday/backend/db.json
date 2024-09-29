@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": "2518",
+      "username": "abc",
+      "email": "abc@gmail.com",
+      "password": "123456",
+      "dob": "2024-09-01"
+    },
+    {
+      "id": "7136",
+      "username": "Ansh Bernwal",
+      "email": "ansh@gmail.com",
+      "password": "123",
+      "dob": "2024-09-05"
+    },
+    {
+      "id": "358e",
+      "username": "Sumit kumar",
+      "email": "sumit@gmail.com",
+      "password": "sumit",
+      "dob": "2024-09-29"
+    },
+    {
+      "id": "4d76",
+      "username": "Abhimanyu Solanki",
+      "email": "abhimanyu.20401@knit.ac.in",
+      "password": "0000000000",
+      "dob": "2002-02-25"
+    },
+    {
+      "id": "5926",
+      "username": "demo",
+      "email": "demo@gmail.com",
+      "password": "demo",
+      "dob": "2024-09-01"
+    },
+    {
+      "id": "8fd4",
+      "username": "xyz",
+      "email": "xyz@gmail.com",
+      "password": "xyz",
+      "dob": "2000-05-04"
+    }
+  ]
+}

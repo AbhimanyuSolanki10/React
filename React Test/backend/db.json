@@ -1,0 +1,17 @@
+{
+  "users": [
+    {
+      "id": "001",
+      "username": "Abhimanyu Solanki ",
+      "email": "Abhimanyu@gmail.com",
+      "password": "123456789",
+      "dob": "25-02-2002"
+    },
+    {
+      "id": "7439",
+      "username": "amit bhadwaaaaaa",
+      "email": "fssfg@gmail.com",
+      "password": "123"
+    }
+  ]
+}

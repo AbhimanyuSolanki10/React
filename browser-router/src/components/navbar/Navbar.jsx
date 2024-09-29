@@ -9,12 +9,16 @@ import toast from "react-hot-toast";
 
 const Navbar = () => {
   let id = sessionStorage.getItem("id");
+
   let navigate = useNavigate();
+
+
   function handleLogout() {
     sessionStorage.clear();
     toast.success("logged out");
     navigate("/");
   }
+  
   return (
     <nav id={style.navContainer}>
       <ul>
