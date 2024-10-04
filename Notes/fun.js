@@ -1,11 +1,11 @@
 //! What is React ?
 //? React is javascript library. 
 //! What is library?
-//? library is a collection of pre defined code and this is light weighted as compare to framework
+//? library is a collection of pre defined code and this is light weighted as compare to framework.
 //! What is Framework
-//? Framework is a collection of library 
+//? Framework is a collection of library .
 //! Library Disadvantage 
-//?  we can only create single page Application we don't go from one page to another 
+//?  we can only create single page Application we don't go from one page to another .
 //! Framework disadvantage
 //?  It comes with unnacessary library which make our application slower .
 //! Single page appplication
@@ -13,16 +13,14 @@
 //! Multi page appplication
 //? More  than one html pages  (example amzone) difference is performance when we request then it will start form 0 to 100 or whatever the current request is called  each and everytime this start form 0 and  make the application slow.
 
-// import { element } from "prop-types";
-// import { Suspense, useCallback } from "react";
 
                     //!                 CLI (COMMAND LINE INTERFACE)
                     //!                  |
                     //!  ----------------|------------------------------------------------
                     //!  |                                                                |
                     //!  CREAT REACT APP                                                 VITE(FASTER)
-                    //!  npx create-react-app  projectName(always in lower case)
-
+                    //!  npx create-react-app  projectName(always in lower case)       npm create vite@latest
+  
     //! Features of React 
     //? 1:- Single page application
     //? 2:- Declarative (What to do ) javascript is Imperitive(How to do)
@@ -36,8 +34,8 @@
     //todo difference between XTML and XML
     //? XML is user define and HTML is predefined.
     //? HTML is  case insensitve and XML is  case sensitive
-    //? In Html we have class attribute  XML is class name attribute
-    //? html is use in small letter and when we use any component use Capital letter
+    //? In Html we have class attribute  XML is className attribute
+    //? html is use in small letter and when we use any component we use Capital letter
 
 
     //todo     Its not mandatory to give file and function name same but not a good practice to give different names it is just  for not creating confusion
@@ -52,7 +50,7 @@
     //2   SATELESS                                   SATEFULL     
     //3    HOOKS (to make FBC  as statefull )          NO HOOKS  
     //    (WE CAN ACHIEVE LIFE CYCLE METHOD)                   
-    //4    NO LIFE MEHTODS                           LIFE CYCLE METHOD     
+    //4    NO LIFECYCLE MEHTODS                       LIFECYCLE METHOD     
     //5    NO RENDER                                  RENDER    
 
     //! we can use multiple deafult import statements for multiple components not function
@@ -128,7 +126,7 @@
 //? 3:-  Just before component gets deleted we use ComponentWillUnmount() ;(component ke hatne se pehle ) it is use for any aschnronous behaviour . 
 //? 4:-  Constructor is best place to initialize the state in Class based Component and  it is simliar to ComponentDidMount() and it will execute only one time and it will executed before ComponentDidMount() 
 //? 5:-  We have to use super() call when we use constructor call;
-//? 6:-  We can use console.log() Inside render() and the call Priorty is constructor ---> render ----> compnent mounted .
+//? 6:-  We can use console.log() Inside render() and the call Priorty is constructor ---> render ----> ComponentDidMount() .
 //? 7:-  getSnapshotBeforeUpdate(nextProp,prevState) and return should be compulsory.
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------
 //! useEffect:-
@@ -171,7 +169,7 @@
 //todo useReducer() accepts two arguments ...1: state and action
 
 
-//todo  useCallback rerurn is a memoized function and useMemo return a memoized vlaue 
+//todo  useCallback returns a memoized function and useMemo return a memoized vlaue 
 //! React.memo is a function in react through which we can pass a component like React.memo(ChildA) now our component will be memoized 
 
 // Higher order component is also use  to avoid propDrilling but we not use this much
@@ -181,7 +179,7 @@
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 //! Routing  
 //? 1:- borwser-router  (older version)
-// npm i react-router-dom for 
+// npm i react-router-dom 
 //? 2:- createBroweser-Router
 
 // todo  We use Routes when there are multiple Route and it is basically use to wrap-up the multiple Route
@@ -199,9 +197,9 @@
 // borwser router supermost parent so we have to call navbar inside browser router because we use Link which is component of React 
 
 // end point is the url of api 
-// npx json-server backend/db.json by using this creat api and we have to give port number ---port  5000
+// npx json-server backend/db.json by using this create api and we have to give port number ---port  5000
 // npx json-server backend/db.json --watch --port 5000
-// dummy server per id dena compulsory jai 
+// dummy server per id dena compulsory hai 
 // http://localhost:5000/users ------>this is the end point
 // axios provide four method  axios use to communicate with api or use to send the data 
 // get 
@@ -215,7 +213,7 @@
 // Navigate is component 
 // useNavigate is a hook
 
-// lazy loading or code spliting
+//! lazy loading or code spliting
 // lazy is a hof function which accept one callback function
 // lazy will accept one callback function in which we have to return the import function
 // in react we have one method called lazy  the way we are importing component just we have to change the import way 

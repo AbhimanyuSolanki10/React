@@ -46,7 +46,7 @@ import User from "./components/hoc/User"
 // Fragment or <> is used to avoid extra div which is display on inspect 
 const App = ()=>{
 
-let [toggel,setTooggle]= useState(false);
+// let [toggel,setTooggle]= useState(false);
 
     return <>
             {/* <h1>I am  App component</h1>
@@ -63,7 +63,7 @@ let [toggel,setTooggle]= useState(false);
 
             
             {/* <Parent/> */}
-           <TodoWrapper/>
+           {/* <TodoWrapper/> */}
                 {/* <Controlled/> */}
                 {/* <Controlled2/> */}
 
@@ -75,8 +75,9 @@ let [toggel,setTooggle]= useState(false);
                 {/* <ThemeChange/> */}
 
 
-                {/* <button onClick={()=>{setTooggle(!toggel)}}>toggel</button>
-                {toggel ? <CBC/> : <h1>NO Component</h1>} */}
+                 {/* <button onClick={()=>{setTooggle(!toggel)}}>toggel</button>
+                    {toggel ? <CBC/> : <h1>NO Component</h1>} */}
+                
 
                 {/* <FBC/> */}
                 {/* <button onClick={()=>{setTooggle(!toggel)}}>toggel</button>

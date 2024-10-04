@@ -3,7 +3,7 @@ import { GLOBALDATA } from './Context2'
 
 const Child = () => {
     let val = useContext(GLOBALDATA);
-    console.log(val);
+    console.log("Child component value",val);
   return (
     <div>
         <h1>I am  Child</h1>

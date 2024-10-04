@@ -4,7 +4,7 @@ import Hoc from './Hoc'
 const User = (props) => {
     console.log(props)
   return (
-    <div></div>
+    <div>Users</div>
   )
 }
 

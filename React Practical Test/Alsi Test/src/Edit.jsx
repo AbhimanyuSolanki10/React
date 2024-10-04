@@ -7,6 +7,7 @@ const Edit = () => {
     let[editUser,setEditUser]=useState(null);
     let navigate = useNavigate();
     let {id}=useParams();
+
     let handleEdit=(e)=>{
         let{name,value}=e.target;
         setEditUser({...editUser,[name]:value})
@@ -17,6 +18,7 @@ const Edit = () => {
             setEditUser(data);
         }getAuthUser()
     },[]);
+    
     let handleUpdate=(e)=>{
         e.preventDefault();
         axios.put(`http://localhost:5000/users/${id}`,editUser).then(()=>{

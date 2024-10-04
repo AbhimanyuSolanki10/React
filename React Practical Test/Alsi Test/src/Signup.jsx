@@ -16,6 +16,7 @@ const Signup = () => {
         let{name,value}=e.target;
         setSignupUser({...signupUser,[name]:value});
     }
+    
     let handleSubmit=(e)=>{
         e.preventDefault();
         axios.post(`http://localhost:5000/users`,signupUser).then(()=>{

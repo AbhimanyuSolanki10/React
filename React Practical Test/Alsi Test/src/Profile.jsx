@@ -45,15 +45,14 @@ const Profile = () => {
             {allUsers?.map((user)=>{
                 return(
                     <tr key={user?.id}>
-                    <th>{user?.id}</th>
-                    <th>{user?.username}</th>
-                    <th>{user?.password}</th>
-                    <th>{user?.dob}</th>
-                    <th><button><Link to={`/edit/${user.id}`}>Edit</Link></button></th>
-                    <th><button onClick={()=>{
-                        handleChange(user.id)
-                    }}>Delete</button></th>
-                </tr>
+                        <td>{user?.id}</td>
+                        <td>{user?.username}</td>
+                        <td>{user?.email}</td>
+                        <td>{user?.password}</td>
+                        <td>{user?.dob}</td>
+                        <td><button><Link to={`/edit/${user.id}`}>Edit</Link></button></td>
+                        <td><button onClick={()=>{handleChange(user.id)}}>Delete</button></td>
+                    </tr>
                 )
             })
 
